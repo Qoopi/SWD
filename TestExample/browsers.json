@@ -1,0 +1,98 @@
+{
+  "chrome": {
+    "default": "72.0",
+    "versions": {
+      "72.0": {
+        "image": "selenoid/chrome:72.0",
+        "port": "4444",
+        "path": "/",
+        "tmpfs": {"/tmp": "size=1024m", "/var": "size=512m"},
+        "shmSize": 268435456,
+        "cpu": "1.0",
+        "mem": "2048m"
+      },
+      "71.0": {
+        "image": "selenoid/chrome:71.0",
+        "port": "4444",
+        "path": "/",
+        "tmpfs": {"/tmp": "size=1024m", "/var": "size=512m"},
+        "cpu": "1.0",
+        "shmSize": 268435456,
+        "mem": "2048m"
+      },
+      "70.0": {
+        "image": "selenoid/chrome:70.0",
+        "port": "4444",
+        "path": "/",
+        "tmpfs": {"/tmp": "size=1024m","/var": "size=512m"},
+        "cpu": "1.0",
+        "shmSize": 268435456,
+        "mem": "2048m"
+      }
+    }
+  },
+  "firefox": {
+    "default": "65.0",
+    "versions": {
+      "66.0": {
+        "image": "selenoid/firefox:66.0",
+        "port": "4444",
+        "path": "/wd/hub",
+        "tmpfs": {"/tmp": "size=1024m","/var": "size=512m"},
+        "shmSize": 268435456,
+        "cpu": "1.0",
+        "mem": "2048m"
+      },
+      "65.0": {
+        "image": "selenoid/firefox:65.0",
+        "port": "4444",
+        "path": "/wd/hub",
+        "tmpfs": {"/tmp": "size=1024m","/var": "size=512m"},
+        "shmSize": 268435456,
+        "cpu": "1.0",
+        "mem": "2048m"
+      },
+      "64.0": {
+        "image": "selenoid/firefox:64.0",
+        "port": "4444",
+        "path": "/wd/hub",
+        "tmpfs": {"/tmp": "size=1024m","/var": "size=512m"},
+        "shmSize": 268435456,
+        "cpu": "1.0",
+        "mem": "2048m"
+      }
+    }
+  },
+  "opera": {
+    "default": "56.0",
+    "versions": {
+      "54.0": {
+        "image": "selenoid/opera:54.0",
+        "port": "4444",
+        "path": "/",
+        "tmpfs": {"/tmp": "size=1024m","/var": "size=512m"},
+        "shmSize": 268435456,
+        "cpu": "1.0",
+        "mem": "2048m"
+      },
+      "55.0": {
+        "image": "selenoid/opera:55.0",
+        "port": "4444",
+        "path": "/",
+        "tmpfs": {"/tmp": "size=1024m","/var": "size=512m"},
+        "shmSize": 268435456,
+        "cpu": "1.0",
+        "mem": "2048m"
+      },
+      "56.0": {
+        "image": "selenoid/opera:56.0",
+        "port": "4444",
+        "path": "/",
+        "tmpfs": {"/tmp": "size=1024m","/var": "size=512m"},
+        "shmSize": 268435456,
+        "cpu": "1.0",
+        "mem": "2048m"
+      }
+    }
+  }
+}

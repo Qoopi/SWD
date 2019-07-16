@@ -1,0 +1,23 @@
+version: '3'
+networks:
+  selenoid:
+    external:
+      name: selenoid
+services:
+  selenoid:
+    networks:
+      selenoid: null
+    image: aerokube/selenoid:latest-release
+    volumes:
+      - "/c/Users/Oleg/RiderProjects/SWD/TestExample/:/etc/selenoid/:rw"
+      - "/c/Users/Oleg/selenoid/video/:/opt/selenoid/video/:rw"
+      - "/c/Users/Oleg/selenoid/logs/:/opt/selenoid/logs/:rw"
+      - "//var/run/docker.sock:/var/run/docker.sock"
+    environment:
+      - OVERRIDE_VIDEO_OUTPUT_DIR=/c/Users/Oleg/selenoid/video
+    command: ["-limit","4",
+              "-video-output-dir", "/c/Users/Oleg/selenoid/video/",
+              "-log-output-dir", "/c/Users/Oleg/selenoid/logs/",              
+              "-container-network", "selenoid"]
+    ports:
+      - "4444:4444"
