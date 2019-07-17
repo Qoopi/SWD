@@ -1,6 +1,6 @@
 namespace SWD.Conditions
 {
-    public class Have
+    public static partial class Have
     {
         
     }

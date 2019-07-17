@@ -8,7 +8,7 @@ namespace SWD.Driver
 {
     internal static class DriverFactory
     {
-        internal static  ThreadLocal<IWebDriver> Driver = new ThreadLocal<IWebDriver>();
+        internal static   ThreadLocal<IWebDriver> Driver = new ThreadLocal<IWebDriver>();
 
         internal static IWebDriver GetDriver(bool isRemote, ChromeOptions options)
         {

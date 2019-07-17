@@ -1,7 +1,6 @@
 namespace TestExample.PageObjects
-{
-    public class GooglePage
-    {
-        
-    }
-}
+ {
+     public class GooglePage
+     {
+     }
+ }
