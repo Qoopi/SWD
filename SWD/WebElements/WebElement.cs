@@ -146,7 +146,7 @@ namespace SWD.WebElements
 
         public void Should(AssertCondition condition, int timeout)
         {
-            Wait(() => AssertCondition.Invoke(this),
+            Wait(() => condition.Invoke(this),
                  $"Timed out after {timeout / 1000} seconds while PollingHelper.Waiting for AssertCondition: {condition}",
                 timeout, Settings.WaitStrategy);
         }
@@ -158,7 +158,7 @@ namespace SWD.WebElements
 
         public void ShouldNot(AssertCondition condition, int timeout)
         {
-            Wait(() => !AssertCondition.Invoke(this),
+            Wait(() => !condition.Invoke(this),
                  $"Timed out after {timeout / 1000} seconds while PollingHelper.Waiting for AssertCondition Not fulfilled: {condition}",
                 timeout, Settings.WaitStrategy);
         }
